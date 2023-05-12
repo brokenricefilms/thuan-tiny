@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/SkipLink";
 import { siteConfig } from "@/site-config";
+import "@fontsource/jetbrains-mono";
 
 interface Props {
 	meta: SiteMeta;
@@ -50,6 +51,11 @@ const {
 			// initailse root class attribute
 			root.classList.toggle("dark", isDark);
 		</script>
+		<style>
+			body {
+				font-family: "JetBrains Mono", monospace;
+			}
+		</style>
 	</head>
 	<body>
 		<SkipLink />

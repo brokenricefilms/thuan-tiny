@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 
 import BaseLayout from "./Base.astro";
 import BlogHero from "@/components/blog/Hero";
+import "@fontsource/jetbrains-mono";
 
 interface Props {
 	post: CollectionEntry<"post">;
@@ -38,6 +39,11 @@ const { headings } = await post.render();
 </script>
 
 <BaseLayout meta={{ title, description, articleDate, ogImage: socialImage }}>
+	<style>
+		body {
+			font-family: "JetBrains Mono", monospace;
+		}
+	</style>
 	<div class="gap-x-10 lg:flex lg:items-start">
 		{
 			!!headings.length && (
@@ -45,7 +51,7 @@ const { headings } = await post.render();
 					<h2 class="font-semibold">Table of Contents</h2>
 					<ul class="mt-4 text-xs">
 						{headings.map(({ depth, slug, text }) => (
-							<li class="hover:text-accent line-clamp-2">
+							<li class="line-clamp-2 hover:text-accent">
 								<a
 									class={`block ${depth <= 2 ? "mt-3" : "mt-2 ps-3 text-[0.6875rem]"}`}
 									href={`#${slug}`}
