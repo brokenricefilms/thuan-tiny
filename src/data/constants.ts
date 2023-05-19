@@ -11,6 +11,10 @@ export const MENU_LINKS = [
     title: "Blog",
     path: "/posts",
   },
+  {
+    title: "YTweets",
+    path: "https://www.youtube.com/@thuanowa/community",
+  },
 ];
 
 // ! Remember to add your own socials
