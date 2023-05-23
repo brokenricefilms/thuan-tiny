@@ -97,7 +97,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		</ul>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
+		<a href="/posts">
+			<h2 class="title mb-4 text-xl">Posts</h2>
+		</a>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
@@ -107,5 +109,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 				))
 			}
 		</ul>
+		<a href="/posts" class="cactus-link italic">see more</a>
 	</section>
 </PageLayout>
