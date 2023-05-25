@@ -10,7 +10,7 @@ tags: ["English", "Health"]
 ### Joji
 
 - https://l.thuanowa.com/music-joji
-- Why i like:  [The people who make music: Joji - YouTube](https://youtu.be/AzlP_8Nwywg)
+- Why i like: [The people who make music: Joji - YouTube](https://youtu.be/AzlP_8Nwywg)
 
 ### Two Feet
 
@@ -25,7 +25,7 @@ tags: ["English", "Health"]
 ### B Ray
 
 - https://l.thuanowa.com/music-b-ray
-- Why i like:  [The people who make music: B Ray - YouTube](https://youtu.be/GDsZvdZ-7oA)
+- Why i like: [The people who make music: B Ray - YouTube](https://youtu.be/GDsZvdZ-7oA)
 
 ### Đen Vâu
 

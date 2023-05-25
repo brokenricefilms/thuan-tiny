@@ -8,31 +8,31 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  // ! Please remember to replace the following site property with your own domain
-  site: "https://thuanowa.com/",
-  markdown: {
-    shikiConfig: {
-      theme: "dracula",
-      wrap: true,
-    },
-  },
-  integrations: [
-    mdx({}),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
-    sitemap(),
-    prefetch(),
-    compress(),
-  ],
-  vite: {
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
-    },
-  },
+	// ! Please remember to replace the following site property with your own domain
+	site: "https://thuanowa.com/",
+	markdown: {
+		shikiConfig: {
+			theme: "dracula",
+			wrap: true,
+		},
+	},
+	integrations: [
+		mdx({}),
+		tailwind({
+			config: {
+				applyBaseStyles: false,
+			},
+		}),
+		image({
+			serviceEntryPoint: "@astrojs/image/sharp",
+		}),
+		sitemap(),
+		prefetch(),
+		compress(),
+	],
+	vite: {
+		optimizeDeps: {
+			exclude: ["@resvg/resvg-js"],
+		},
+	},
 });
