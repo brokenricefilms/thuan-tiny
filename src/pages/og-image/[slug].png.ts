@@ -1,38 +1,38 @@
 import type { APIContext, GetStaticPathsResult } from "astro";
 import { getCollection, getEntryBySlug } from "astro:content";
+import { readFileSync } from "node:fs";
+import { join, resolve } from "node:path";
 import satori, { SatoriOptions } from "satori";
 import { html } from "satori-html";
 import { Resvg } from "@resvg/resvg-js";
 import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
-const monoFontReg = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-400-normal.ttf"
-);
+const AssetDir = resolve("src", "assets");
+const RobotoMonoPath = join(AssetDir, "roboto-mono-regular.ttf");
+const RobotoMonoBoldPath = join(AssetDir, "roboto-mono-700.ttf");
 
-const monoFontBold = await fetch(
-	"https://api.fontsource.org/v1/fonts/roboto-mono/latin-700-normal.ttf"
-);
+const RobotoMonoReg = readFileSync(RobotoMonoPath);
+const RobotoMonoBold = readFileSync(RobotoMonoBoldPath);
 
 const ogOptions: SatoriOptions = {
-	width: 1200,
-	height: 630,
-	// debug: true,
-	embedFont: true,
-	fonts: [
-		{
-			name: "Roboto Mono",
-			data: await monoFontReg.arrayBuffer(),
-			weight: 400,
-			style: "normal",
-		},
-		{
-			name: "Roboto Mono",
-			data: await monoFontBold.arrayBuffer(),
-			weight: 700,
-			style: "normal",
-		},
-	],
+  width: 1200,
+  height: 630,
+  // debug: true,
+  fonts: [
+    {
+      name: "Roboto Mono",
+      data: RobotoMonoReg,
+      weight: 400,
+      style: "normal",
+    },
+    {
+      name: "Roboto Mono",
+      data: RobotoMonoBold,
+      weight: 700,
+      style: "normal",
+    },
+  ],
 };
 
 const markup = (title: string, pubDate: string) => html`<div
@@ -66,21 +66,21 @@ const markup = (title: string, pubDate: string) => html`<div
 </div>`;
 
 export async function get({ params: { slug } }: APIContext) {
-	const post = await getEntryBySlug("post", slug!);
-	const title = post?.data.title ?? siteConfig.title;
-	const postDate = getFormattedDate(post?.data.publishDate ?? Date.now(), {
-		weekday: "long",
-		month: "long",
-	});
-	const svg = await satori(markup(title, postDate), ogOptions);
-	const png = new Resvg(svg).render().asPng();
-	return {
-		body: png,
-		encoding: "binary",
-	};
+  const post = await getEntryBySlug("post", slug!);
+  const title = post?.data.title ?? siteConfig.title;
+  const postDate = getFormattedDate(post?.data.publishDate ?? Date.now(), {
+    weekday: "long",
+    month: "long",
+  });
+  const svg = await satori(markup(title, postDate), ogOptions);
+  const png = new Resvg(svg).render().asPng();
+  return {
+    body: png,
+    encoding: "binary",
+  };
 }
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
-	const posts = await getCollection("post");
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+  const posts = await getCollection("post");
+  return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
 }

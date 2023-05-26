@@ -17,8 +17,8 @@ dependencies:
     specifier: ^1.1.42
     version: 1.1.42
   satori:
-    specifier: 0.4.11
-    version: 0.4.11
+    specifier: 0.9.1
+    version: 0.9.1
   satori-html:
     specifier: ^0.3.2
     version: 0.3.2
@@ -32,7 +32,7 @@ devDependencies:
     version: 0.16.6(astro@2.3.0)(sharp@0.31.3)
   '@astrojs/mdx':
     specifier: ^0.19.0
-    version: 0.19.0(astro@2.3.0)(rollup@3.20.4)
+    version: 0.19.0(astro@2.3.0)
   '@astrojs/sitemap':
     specifier: ^1.2.2
     version: 1.2.2
@@ -193,14 +193,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@astrojs/mdx@0.19.0(astro@2.3.0)(rollup@3.20.4):
+  /@astrojs/mdx@0.19.0(astro@2.3.0):
     resolution: {integrity: sha512-McFpMV+npinIEKnY5t9hsdzLd76g78GgIRUPxem2OeXPNB8xr2pNS28GeU0+6Pn5STnB+sgcyyeqXLgzauOlMQ==}
     engines: {node: '>=16.12.0'}
     dependencies:
       '@astrojs/markdown-remark': 2.1.4(astro@2.3.0)
       '@astrojs/prism': 2.1.1
       '@mdx-js/mdx': 2.3.0
-      '@mdx-js/rollup': 2.3.0(rollup@3.20.4)
+      '@mdx-js/rollup': 2.3.0
       acorn: 8.8.2
       es-module-lexer: 1.2.1
       estree-util-visit: 1.2.1
@@ -824,14 +824,16 @@ packages:
       - supports-color
     dev: true
 
-  /@mdx-js/rollup@2.3.0(rollup@3.20.4):
+  /@mdx-js/rollup@2.3.0:
     resolution: {integrity: sha512-wLvRfJS/M4UmdqTd+WoaySEE7q4BIejYf1xAHXYvtT1du/1Tl/z2450Gg2+Hu7fh05KwRRiehiTP9Yc/Dtn0fA==}
     peerDependencies:
       rollup: '>=2'
+    peerDependenciesMeta:
+      rollup:
+        optional: true
     dependencies:
       '@mdx-js/mdx': 2.3.0
-      '@rollup/pluginutils': 5.0.2(rollup@3.20.4)
-      rollup: 3.20.4
+      '@rollup/pluginutils': 5.0.2
       source-map: 0.7.4
       vfile: 5.3.7
     transitivePeerDependencies:
@@ -1000,7 +1002,7 @@ packages:
       '@resvg/resvg-js-win32-x64-msvc': 2.4.1
     dev: true
 
-  /@rollup/pluginutils@5.0.2(rollup@3.20.4):
+  /@rollup/pluginutils@5.0.2:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -1012,7 +1014,6 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 3.20.4
     dev: true
 
   /@shuding/opentype.js@1.4.0-beta.0:
@@ -3099,6 +3100,11 @@ packages:
       property-information: 6.2.0
       space-separated-tokens: 2.0.2
 
+  /hex-rgb@4.3.0:
+    resolution: {integrity: sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==}
+    engines: {node: '>=6'}
+    dev: false
+
   /html-escaper@3.0.3:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
 
@@ -4406,6 +4412,13 @@ packages:
       callsites: 3.1.0
     dev: true
 
+  /parse-css-color@0.2.1:
+    resolution: {integrity: sha512-bwS/GGIFV3b6KS4uwpzCFj4w297Yl3uqnSgIPsoQkx7GMLROXfMnWvxfNkL0oh8HVhZA4hvJoEoEIqonfJ3BWg==}
+    dependencies:
+      color-name: 1.1.4
+      hex-rgb: 4.3.0
+    dev: false
+
   /parse-entities@4.0.1:
     resolution: {integrity: sha512-SWzvYcSJh4d/SGLIOQfZ/CoNv6BTlI6YEQ7Nj82oDVnRpwe/Z/F1EMx42x3JAOwGBlCjeCH0BRJQbQ/opHL17w==}
     dependencies:
@@ -5019,8 +5032,8 @@ packages:
       ultrahtml: 1.2.0
     dev: false
 
-  /satori@0.4.11:
-    resolution: {integrity: sha512-Ev8xEkDkURnEz/qWeGLWss3BkbfeoSfB0tXTqijfLrdaOsUyTW4SQmEtvF5atoYw/8GgS1Nq2sJMXX4BXhyFPg==}
+  /satori@0.9.1:
+    resolution: {integrity: sha512-2ggMOiY8O8rIxQ6vywiw3LlBheWHbsOzu5hZdMXTDFKzE9sDHUOtJegGmGE+e9aRSO1ttttgXrcHVsHPKYU2GQ==}
     engines: {node: '>=16'}
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
@@ -5029,6 +5042,7 @@ packages:
       css-to-react-native: 3.2.0
       emoji-regex: 10.2.1
       linebreak: 1.1.0
+      parse-css-color: 0.2.1
       postcss-value-parser: 4.2.0
       yoga-wasm-web: 0.3.3
     dev: false
