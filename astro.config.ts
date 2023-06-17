@@ -30,6 +30,7 @@ export default defineConfig({
 		prefetch(),
 		compress(),
 	],
+	compressHTML: true,
 	vite: {
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
