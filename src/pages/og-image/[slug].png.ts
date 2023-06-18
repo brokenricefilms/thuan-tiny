@@ -1,4 +1,4 @@
-import type { APIContext, GetStaticPathsResult } from "astro";
+import type { APIContext, GetStaticPaths } from "astro";
 import { getCollection, getEntryBySlug } from "astro:content";
 import { readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
@@ -16,23 +16,23 @@ const RobotoMonoReg = readFileSync(RobotoMonoPath);
 const RobotoMonoBold = readFileSync(RobotoMonoBoldPath);
 
 const ogOptions: SatoriOptions = {
-	width: 1200,
-	height: 630,
-	// debug: true,
-	fonts: [
-		{
-			name: "Roboto Mono",
-			data: RobotoMonoReg,
-			weight: 400,
-			style: "normal",
-		},
-		{
-			name: "Roboto Mono",
-			data: RobotoMonoBold,
-			weight: 700,
-			style: "normal",
-		},
-	],
+  width: 1200,
+  height: 630,
+  // debug: true,
+  fonts: [
+    {
+      name: "Roboto Mono",
+      data: RobotoMonoReg,
+      weight: 400,
+      style: "normal",
+    },
+    {
+      name: "Roboto Mono",
+      data: RobotoMonoBold,
+      weight: 700,
+      style: "normal",
+    },
+  ],
 };
 
 const markup = (title: string, pubDate: string) => html`<div
@@ -66,21 +66,21 @@ const markup = (title: string, pubDate: string) => html`<div
 </div>`;
 
 export async function get({ params: { slug } }: APIContext) {
-	const post = await getEntryBySlug("post", slug!);
-	const title = post?.data.title ?? siteConfig.title;
-	const postDate = getFormattedDate(post?.data.publishDate ?? Date.now(), {
-		weekday: "long",
-		month: "long",
-	});
-	const svg = await satori(markup(title, postDate), ogOptions);
-	const png = new Resvg(svg).render().asPng();
-	return {
-		body: png,
-		encoding: "binary",
-	};
+  const post = await getEntryBySlug("post", slug!);
+  const title = post?.data.title ?? siteConfig.title;
+  const postDate = getFormattedDate(post?.data.publishDate ?? Date.now(), {
+    weekday: "long",
+    month: "long",
+  });
+  const svg = await satori(markup(title, postDate), ogOptions);
+  const png = new Resvg(svg).render().asPng();
+  return {
+    body: png,
+    encoding: "binary",
+  };
 }
 
-export async function getStaticPaths(): Promise<GetStaticPathsResult> {
-	const posts = await getCollection("post");
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
-}
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("post");
+  return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+}) satisfies GetStaticPaths;
