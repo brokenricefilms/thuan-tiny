@@ -1,7 +1,7 @@
 ---
 title: "Chuyện sửa bàn phím khi không có tool"
 publishDate: "17 May 2023"
-description: ""
+description: "khi người ngèo chơi bàn phím cơ"
 tags: ["vietnamese", "keyboard"]
 ---
 
