@@ -1,7 +1,7 @@
 ---
-title: "OMG! Oh My Girl (2022)"
+title: "Khi FA từ cha sinh mẹ đẻ nói về tình yêu"
 publishDate: "23 Jun 2023"
-description: "Khi FA từ cha sinh mẹ đẻ nói về tình yêu"
+description: "Cuội nguồn của ngôn từ OMG! Oh My Girl (2022)"
 tags: ["vietnamese", "movie"]
 ---
 
