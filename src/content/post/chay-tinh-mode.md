@@ -46,5 +46,6 @@ Công pháp cuối cùng dùng để nâng cao tinh thần lực, khi tinh thầ
 ![gau cao tu](/gau-cao-tu.png)
 
 ## Tham khảo linh ta linh tin:
+
 - Đen - hai triệu năm ft. Biên
 - Gấu trúc meme trung quốc

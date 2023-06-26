@@ -87,6 +87,7 @@ Chợt nhận ra bản thân cũng FA. 😢
 ![gau cry](/gau-cry.png)
 
 ## Tham khảo, hình ảnh, linh ta linh tinh:
+
 - “khoan, dừng khoảng chừng là 2 giây”: Alaba Trap | Quang Tèo x MCK.
 - Hình Quang Tèo meme: Alaba Trap 2, Duck Batman.
 - Cổ máy thời gian: https://doraemon.fandom.com/vi/wiki/C%E1%BB%97_m%C3%A1y_th%E1%BB%9Di_gian
