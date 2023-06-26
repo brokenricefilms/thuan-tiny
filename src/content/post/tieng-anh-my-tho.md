@@ -34,19 +34,17 @@ Thế rồi thi đại học xong, lại có thời gian ở nhà phè phỡn v�
 
 Chuyện dẫn đến việc các tài liệu, lỗi các thể loại của Linux bằng tiếng Việt không được phong phú nói thẳng ra là thuộc dạng hộ xóa đói giảm nghèo, nên mình mới bắt đầu bị môi trường ép xài tiếng Anh để đọc, nghe mấy video trên Youtube, do nghiện rồi biết làm sao?
 
-Cũng do một phần mình cũng thích coi mấy cái Vlog của mấy chị đẹp trên Youtube, do nội dung tiếng Anh có chị đẹp cũng khá nhiều. 
+Cũng do một phần mình cũng thích coi mấy cái Vlog của mấy chị đẹp trên Youtube, do nội dung tiếng Anh có chị đẹp cũng khá nhiều.
 
 Và rồi chuyện lập trình các thứ tìm kiếm bằng tiếng Anh cũng dễ dàng, nhiều cái để đọc hơn.
 
 Đó tạo ra cho mình một lý do để bản thân “xài" tiếng Anh để coi mấy chị đẹp, ý nhầm ahihi Linux vẫn là chân lý.
 
-
 Rồi thế rồi bắt đầu cuộc sống sinh viên, học tiếng anh cũng có một chút khác khác, làm bài để kiểm tra TOEIC đồ nhưng có cái vui là được thuyết trình nhóm chém gió đồ cũng vui. Đây cũng là lần đầu tiếng giao tiếp tiếng anh với con người mặt đối mặt dù nói chuyện ngắn ngắn với thầy thôi nhưng mà dù gì thì vẫn là lần đầu tiên khá đáng nhớ.
 
 Lên đại học thì mình ít để ý đến ngữ pháp, nói chung là làm kiểm tra thì cứ làm đại thôi cũng chả ôn gì, hên cũng được qua môn (tổ tiên độ), rồi dần dần cũng chả để ý đến ngữ pháp cứ làm đại rồi dẫn đến bây giờ quên gần hết ngữ pháp 🥲.
 
-Coi Youtube cũng nhiều, thấy mấy chị đẹp vlog quài cũng dẫn tới một tư tưởng tại sao mình không làm một kênh Youtube để quay lại những kỷ niệm của mình rồi cảm thấy đủ rồi thì làm một cái video document về chính bản thân. Ú òa, vậy sản tiện cải thiện tiếng Anh bằng việc làm video luôn, một công đôi việc. 
-
+Coi Youtube cũng nhiều, thấy mấy chị đẹp vlog quài cũng dẫn tới một tư tưởng tại sao mình không làm một kênh Youtube để quay lại những kỷ niệm của mình rồi cảm thấy đủ rồi thì làm một cái video document về chính bản thân. Ú òa, vậy sản tiện cải thiện tiếng Anh bằng việc làm video luôn, một công đôi việc.
 
 Bàn chứng thép: https://www.youtube.com/@thuanowa
 
@@ -60,7 +58,7 @@ Rồi cũng có câu lạc bộ tiếng anh lấy ví dụ như https://langclub
 
 Tóm lại.
 
-Mình cảm thấy thoải mái với việc học ngôn ngữ như một đứa trẻ, học để xài nó, học để giải quyết cái chỗ ngứa của bản thân. Dù thấy cách học của mình không được xịn sò, cứ tà tà ngứa chỗ nào gãy chỗ đó, lâu lâu thấy từ nào hiện ra quài thấy ngứa thì cũng dịch tập pháp âm theo để nói cho chị Google hiểu. Nhưng dù sao mình là một đứa bản tính hơi bị lười và thực dụng nên thấy cách này khiến bản thân thoải mái nhất. Nếu bản muốn học nhanh một ngôn ngữ nào đó thì có thể thấy một phương thức khá phổ biến là học nhồi, thúc ép bản thân, nhưng do cách này khá trâu bò, mình thi không đủ trâu bò theo kiểu này lém nói chung là lười chảy thây ra. 
+Mình cảm thấy thoải mái với việc học ngôn ngữ như một đứa trẻ, học để xài nó, học để giải quyết cái chỗ ngứa của bản thân. Dù thấy cách học của mình không được xịn sò, cứ tà tà ngứa chỗ nào gãy chỗ đó, lâu lâu thấy từ nào hiện ra quài thấy ngứa thì cũng dịch tập pháp âm theo để nói cho chị Google hiểu. Nhưng dù sao mình là một đứa bản tính hơi bị lười và thực dụng nên thấy cách này khiến bản thân thoải mái nhất. Nếu bản muốn học nhanh một ngôn ngữ nào đó thì có thể thấy một phương thức khá phổ biến là học nhồi, thúc ép bản thân, nhưng do cách này khá trâu bò, mình thi không đủ trâu bò theo kiểu này lém nói chung là lười chảy thây ra.
 
 Theo mình thấy có hai nguồn mình có thể recommend cho mấy bạn, một là Hana's Lexis, sư tỷ khá nổi tiếng ở Việt Nam cũng theo ngành lập trình rồi trình độ tiếng Anh cũng thuộc hàng top, coi video của Hana sư tỷ cũng vui. Còn người thứ hai mình recommend là Justin Sung, đây là một sư huynh nói về cách học hiệu quả.
 
