@@ -1,6 +1,6 @@
 ---
 title: "Bước tiếp, bước đến đường chân trời"
-publishDate: "8 February 2021"
+publishDate: "3 July 2023"
 description: "Cái gì đằng sau ở đằng sau đường chân trời?"
 tags: ["Vietnamese", "manhwa", "phisology"]
 ---
