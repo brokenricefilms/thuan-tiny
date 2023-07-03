@@ -21,7 +21,7 @@ Tồn tại để tác động, hay đi tìm chữ “lợi" trong thế gian r�
 
 Liệu tôi còn tò mò đằng sau đường chân trời, có khao khát được hạnh phúc, có khao khát được yên bình và liệu tôi còn khao khát?
 
-Và dường chân trời ấy mãi luôn là điểm dừng chân tiếp theo của tôi.
+Và đường chân trời ấy mãi luôn là điểm dừng chân tiếp theo của tôi.
 
 ---
 
