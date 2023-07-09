@@ -25,4 +25,4 @@ Và đường chân trời ấy mãi luôn là điểm dừng chân tiếp theo 
 
 ---
 
-THE HORIZON: https://www.webtoons.com/en/drama/the-horizon/
+THE HORIZON: https://www.webtoons.com/en/drama/the-horizon/list?title_no=3141&page=1
